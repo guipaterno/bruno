@@ -137,7 +137,7 @@
   }
 
   .banner {
-    background-image: url("/assets/images/fundo.jpg");
+    background-image: url("/bruno/assets/images/fundo.jpg");
     background-position: left;
     background-size: cover;
     padding-top: 80px;
@@ -196,7 +196,7 @@
 
   .area1--img2{
     
-    background-image: url('/assets/images/btg1.jpeg');
+    background-image: url('/bruno/assets/images/btg1.jpeg');
     background-position: center;
     background-size: cover;
     grid-column: 2 / 3;
@@ -278,7 +278,7 @@
 
   .area2--img2{
     
-    background-image: url('/assets/images/bt3.jpeg');
+    background-image: url('/bruno/assets/images/bt3.jpeg');
     background-position: center;
     background-size: cover;
     grid-column: 1 / 2;
@@ -318,7 +318,7 @@
   }
 
   .area3--img1{
-    background-image: url('/assets/images/bt5.jpeg');
+    background-image: url('/bruno/assets/images/bt5.jpeg');
     background-position: center;
     background-size: cover;
     height: 900px;
@@ -362,7 +362,7 @@
     
     
   .area5{
-    background-image: url('/assets/images/fundo.jpg');
+    background-image: url('/bruno/assets/images/fundo.jpg');
     background-position: center;
     background-size: cover;
     height: 200px;
