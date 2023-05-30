@@ -1,0 +1,481 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;700&display=swap');
+
+  body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    
+  }
+
+.button{
+    display:inline-block;
+    border: 2px solid #454545;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none;
+}
+
+.button:hover{
+    color:  black;
+    background-color:rgb(255, 184, 1);
+    
+    
+  }
+
+  header .line{
+    background-color:rgb(255, 184, 1);
+    height: 10px;
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: auto;
+    
+  }
+  header{
+    background-color: #000000;
+  }
+
+  .bar{
+    background-color:rgb(255, 184, 1);
+    width: 168px;
+    height: 22px;
+  }
+
+  h1{
+
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Oswald',sans-serif;
+    line-height: 100px;
+    margin: 0  ;
+    margin-bottom: 30px;
+    color: rgb(255, 184, 1);
+    text-shadow: 2px 2px 4px #000000
+    
+      
+  }
+  span {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000
+
+  }
+
+  h2 {
+
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Oswald',sans-serif;
+    line-height: 45px;
+    margin: 20px 0;
+    
+    
+
+  }
+
+
+  .header--area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width:100px;
+    background-color: black;
+
+    
+  }
+
+  .header-left img{
+    width: 78x;
+    height: 78px;
+
+  }
+
+.header-right{
+    display: flex;
+    align-items: center;
+    
+        
+}
+
+  .header--search form{
+    display: flex;
+  }
+
+  .header--search input{
+    font-size: 16px;
+    padding: 7px 10px;
+    border: 1px solid #999999;
+    outline: 0  ;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .header--search button{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .header--search button img{
+    width: 20px;
+    height: 20px;   
+    margin-left: -45px;
+  }
+
+  .header--menu{
+    margin-left: 20px;
+    cursor: pointer;
+
+  }
+
+  .header--menu img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .banner {
+    background-image: url("/assets/images/fundo.jpg");
+    background-position: left;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    height: auto;
+  }
+
+  
+.banner--images {
+    margin-top: 50px;
+
+}
+
+  .banner--images img{
+    width: 140px;
+    height: 140px;
+    border: 5px solid rgb(255, 184, 1);
+    border-radius: 50%;
+    margin-right: 50px;
+    box-shadow: 2px 2px 4px #000000
+  }
+  .banner--images img:hover{
+   opacity: 0.9;
+   width: 140px;
+   height: 140px;
+   border: 5px solid black;
+   border-radius: 50%;
+   margin-right: 50px;
+   
+   
+  }
+
+.area1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+    ;
+}
+
+.area1--content{
+
+    padding: 80px;
+}
+
+.area1--quote{
+    margin-bottom: 30px;
+}
+
+ /* 
+  COMENTARIO - não tem necessidade dessa area 1 img1
+ .area1--img1{
+    background-image: url("");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+  }*/
+
+  .area1--img2{
+    
+    background-image: url('/assets/images/btg1.jpeg');
+    background-position: center;
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    height: 800px;
+    
+  }
+
+  .area1--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+  }
+
+ 
+
+
+
+  .area2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+    ;
+}
+
+.area2--content{
+
+    padding: 80px;
+}
+
+
+
+  .area2--img1{
+    background-color: rgb(243, 238, 238);
+    background-position: center;
+    background-size: cover;
+    height: 400px; /*aqui precisa definir qual vai ser o tamanho da foto dos depoimentos*/  
+    position: relative;
+    overflow: hidden;
+  }
+  
+.dep{
+  position: absolute;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes animacao{
+
+  25%{
+    opacity: 1;
+    transform:scale(1.1,1.1) ;
+  }
+
+  50%{
+    opacity:0 ;
+  }
+}
+
+
+.dep:nth-child(1){
+
+}
+
+.dep:nth-child(2){
+  animation-delay: 5s;
+  
+}
+.dep:nth-child(3){
+  animation-delay: 10s;
+}
+.dep:nth-child(4){
+  animation-delay: 15s;
+}
+
+
+  /*fim da estilização*/
+
+  .area2--img2{
+    
+    background-image: url('/assets/images/bt3.jpeg');
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .area2--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+  }
+
+
+  
+
+
+
+  .area3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+    ;
+}
+
+.area3--content{
+    
+    padding: 80px;
+    background-image: url /* verificar qual imagem por*/;
+    background-position:left;
+    background-size: cover;
+    
+    
+}
+
+
+.area3--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+  }
+
+  .area3--img1{
+    background-image: url('/assets/images/bt5.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    
+  }
+
+ .area4{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    background-color: #e8e9ee; ;
+ }
+
+ .area4--content{
+
+    padding: 150px 80px ;
+ }
+
+ .area4--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+  }
+/* comentei para testar o CSS abaixo
+  .area4--img1{
+    background-image: url('/assets/images/prudential.jpg');
+    background-position: center;
+    background-size: cover;
+    
+  }*/
+
+.area4--img1{
+ /* background-image: url("/assets/images/fundo-prud.png");*/
+ background-color:gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: right;
+  background-size:auto
+
+}
+
+    
+    
+  .area5{
+    background-image: url('/assets/images/fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+  }
+
+  /* Style all font awesome icons */
+.fa {
+ 
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+  footer{
+    background-color: #333;
+    color: white;
+    padding: 80px;
+    text-align: center;
+  }
+/*
+  @media (min-width:769px) and (max-width:1140px){
+    .container{
+        padding-left: 20px ;
+        padding-right: 20px;
+    }
+  }
+
+  @media (min-width:426px) and (max-width:768px)
+  {
+    .container{
+        padding-left: 20px ;
+        padding-right: 20px;
+    }
+
+    
+    .area1{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3{
+        grid-template-columns: 3fr 2fr;
+    }
+  }
+
+  @media (max-width:425px){
+    .container{
+        padding-left: 20px ;
+        padding-right: 20px;
+    }
+
+    .header--menu{
+        margin-left: 20px;
+    }
+    .header--search input{
+        max-width: 80px;
+    }
+
+    h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .banner--images img{
+        width: 70px;
+        height: 70px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .area1, .area2, .area3, .area4{
+        grid-template-columns: 1fr;
+    }
+    .area1--content, .area2--content, .area3--content, .area4--content{
+        padding: 40px;
+    }
+  .area5{
+    height: 200px;
+  }
+  footer{
+    font-size: 12px;
+    padding: 40px 20px;
+  }
+  }
+  */
